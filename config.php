@@ -1,9 +1,13 @@
 <?php
-// Preencha somente no servidor. Nunca publique estes valores em repositório público.
-define('GITHUB_TOKEN', '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);
+
+define(
+    'GITHUB_TOKEN',
+    getenv('GITHUB_TOKEN') ?: ''
+);
+
 define('ADMIN_PASSWORD', 'digital');
-// A mesma chave deve ser colocada em ControlApi.java.
 define('PUBLIC_APP_KEY', 'desenvolvedorviniciusbb');
+
 define('GITHUB_OWNER', 'viniciusoficial');
 define('GITHUB_REPOSITORY', 'api-php-ativador');
 define('GITHUB_BRANCH', 'main');
