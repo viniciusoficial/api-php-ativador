@@ -1,6 +1,6 @@
 <?php
 // Preencha somente no servidor. Nunca publique estes valores em repositório público.
-define('GITHUB_TOKEN', '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');
+define('GITHUB_TOKEN', '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);
 define('ADMIN_PASSWORD', 'digital');
 // A mesma chave deve ser colocada em ControlApi.java.
 define('PUBLIC_APP_KEY', 'desenvolvedorviniciusbb');
