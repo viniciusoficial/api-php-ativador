@@ -25,5 +25,6 @@ try {
     github_devices_write($newItems, $data['sha']);
     $blocked = !empty($record['blocked']);
     $message = $blocked && !empty($record['message']) ? $record['message'] : (string)($settings['lock_message'] ?? '');
-    echo json_encode(['ok' => true, 'plan_active' => !empty($settings['plan_active']), 'device_blocked' => $blocked, 'message' => $message, 'dialog' => (string)($settings['dialog_message'] ?? '')], JSON_UNESCAPED_UNICODE);
+    $link = github_link_read();
+    echo json_encode(['ok' => true, 'plan_active' => !empty($settings['plan_active']), 'device_blocked' => $blocked, 'message' => $message, 'dialog' => (string)($settings['dialog_message'] ?? ''), 'unitv_url' => $link['url']], JSON_UNESCAPED_UNICODE);
 } catch (Throwable $e) { fail_api($e->getMessage(), 502); }
