@@ -8,19 +8,19 @@
         "last_seen": "2026-10-29T21:42:12+00:00"
     },
     {
-        "device_id": "7101888d72db5a48",
-        "blocked": false,
-        "message": "",
-        "model": "Google Pixel",
-        "android_version": "10",
-        "last_seen": "2026-10-29T21:54:58+00:00"
-    },
-    {
         "device_id": "3719bc141836b106",
         "blocked": false,
         "message": "",
         "model": "Xiaomi 25028PC03G",
         "android_version": "15",
         "last_seen": "2026-10-29T23:20:04+00:00"
+    },
+    {
+        "device_id": "7101888d72db5a48",
+        "blocked": false,
+        "message": "",
+        "model": "Google Pixel",
+        "android_version": "10",
+        "last_seen": "2026-10-31T01:48:28+00:00"
     }
 ]
